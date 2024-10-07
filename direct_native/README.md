@@ -1,6 +1,6 @@
 # Direct Native (DN) Framework
 
-A powerful framework for building native Dart applications.
+A powerful dart framework for building native IOS and Android applications.
 
 ## Getting Started
 
