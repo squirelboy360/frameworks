@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.4.1)
+
+add_library(direct_native SHARED
+            direct_native.c)
+
+target_link_libraries(direct_native
+                      android
+                      log)
