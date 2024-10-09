@@ -1,17 +1,16 @@
 package com.example.directnative
 
 import android.app.Activity
-import org.json.JSONObject
 
 class DNBridge(private val activity: Activity) {
     private val renderer = DNRenderer(activity)
 
-    external fun initialize()
-    
+    external fun initialize(): Long
+    external fun render(messageSize: Int)
+
     fun nativeRender(uiDescription: String) {
-        val jsonDescription = JSONObject(uiDescription)
         activity.runOnUiThread {
-            renderer.render(jsonDescription)
+            renderer.render(uiDescription)
         }
     }
 

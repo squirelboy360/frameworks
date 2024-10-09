@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class View {
   final List<dynamic> children;
   final Map<String, dynamic> style;
@@ -11,4 +13,6 @@ class View {
       'style': style,
     };
   }
+
+  String toJson() => json.encode(toMap());
 }

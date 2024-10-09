@@ -14,5 +14,13 @@
         "devtools_options.yaml": true,
         "README.md": true
     },
-    "hide-files.files": []
+    "hide-files.files": [],
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        ".env*": "dotenv",
+        "message.h": "c",
+        "stdlib.h": "c",
+        "jni.h": "c",
+        "string.h": "c"
+    }
 }

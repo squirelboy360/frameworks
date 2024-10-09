@@ -1,6 +1,4 @@
-
-import 'package:direct_native/src/core/native_bridge/native_bridge.dart';
-
+import 'native_bridge/native_bridge.dart';
 import '../ui/primitives/view.dart';
 
 class DNApp {
@@ -9,7 +7,7 @@ class DNApp {
   DNApp({required this.rootView});
 
   void run() {
-    MethodChannel.initialize();
-    MethodChannel.invokeMethod('renderView', rootView.toMap());
+    NativeBridge.initialize();
+    NativeBridge.render(rootView.toMap());
   }
 }
