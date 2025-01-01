@@ -86,6 +86,20 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  flative_engine:
+    dependency: "direct main"
+    description:
+      path: "../packages/flative_engine"
+      relative: true
+    source: path
+    version: "1.0.0"
+  flative_premitives:
+    dependency: "direct main"
+    description:
+      path: "../packages/flative_premitives"
+      relative: true
+    source: path
+    version: "1.0.0"
   frontend_server_client:
     dependency: transitive
     description:

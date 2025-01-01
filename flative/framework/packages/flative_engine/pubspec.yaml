@@ -1,5 +1,5 @@
-name: flative
-description: A sample command-line application.
+name: flative_engine
+description: A starting point for Dart libraries or applications.
 version: 1.0.0
 # repository: https://github.com/my_org/my_repo
 
@@ -9,10 +9,6 @@ environment:
 # Add regular dependencies here.
 dependencies:
   # path: ^1.8.0
-  flative_engine:
-    path: ../packages/flative_engine
-  flative_premitives:
-    path: ../packages/flative_premitives 
 
 dev_dependencies:
   lints: ^5.0.0
